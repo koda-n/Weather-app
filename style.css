@@ -1,0 +1,75 @@
+ul {
+  list-style-type: none;
+  font-size: 15px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 41px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 13px;
+  font-family: "Coming Soon", cursive;
+  text-align: right;
+  color: #2476ed;
+}
+h3 {
+  font-size: 20px;
+}
+.dan {
+  margin-top: 10px;
+}
+.slikca {
+  margin: auto;
+}
+.mesto {
+  margin-bottom: -5px;
+  text-transform: uppercase;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid grey 2px;
+  padding: 4px;
+  padding-top: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Coming Soon", cursive;
+}
+.column {
+  float: left;
+}
+.left {
+  width: 25%;
+  text-align: left;
+}
+.right {
+  width: 75%;
+  text-align: center;
+}
+.podatki {
+  font-size: 18px;
+}
+.search,
+.go {
+  font-size: 15px;
+  font-family: "Coming Soon", cursive;
+  border: solid grey 0.5px;
+  border-radius: 10%;
+  display: inline-block;
+}
+.go {
+  background-color: #b9d3fd;
+}
+.podrobno {
+  font-size: 20px;
+}
+.cf {
+  font-size: 15px;
+  font-family: "Coming Soon", cursive;
+  border: solid grey 0.5px;
+  border-radius: 10%;
+  display: inline-block;
+  margin-left: 40px;
+}

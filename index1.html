@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="column left">
+        <ul>
+          <li>
+            <div class="dan">MONDAY</div>
+            <div class="slikca">
+              <img src="slike/fog.png" alt="fog" width="65" />
+              <br />
+            </div>
+            <div class="temp">-2° / 4°</div>
+          </li>
+          <br />
+          <li>
+            <div class="dan">TUESDAY</div>
+            <div class="slikca">
+              <img src="slike/sun_cloud.png" alt="fog" width="65" />
+              <br />
+            </div>
+            <div class="temp">-6° / 0°</div>
+          </li>
+          <br />
+          <li>
+            <div class="dan">WEDNESDAY</div>
+            <div class="slikca">
+              <img src="slike/sun.png" alt="fog" width="65" />
+              <br />
+            </div>
+            <div class="temp">-11° / -4°</div>
+          </li>
+          <br />
+          <li>
+            <div class="dan">THURSDAY</div>
+            <div class="slikca">
+              <img src="slike/sun.png" alt="fog" width="65" />
+              <br />
+            </div>
+            <div class="temp">-10° / -2°</div>
+          </li>
+          <br />
+          <li>
+            <div class="dan">FRIDAY</div>
+            <div class="slikca">
+              <img src="slike/snowflake.png" alt="fog" width="65" />
+              <br />
+            </div>
+            <div class="temp">-18° / -5°</div>
+          </li>
+        </ul>
+      </div>
+      <div class="column right">
+        <form id="vnesi">
+          <input
+            class="search"
+            type="text"
+            id="searchBox"
+            placeholder="Search for a city"
+          />
+          <input class="go" type="submit" placeholder="Go" />
+        </form>
+        <h1 class="mesto">
+          RADOVLJICA
+          <br />
+        </h1>
+        <h3>TODAY, 11.11.2020, 11:00</h3>
+        <h1>
+          <img src="slike/sun_cloud.png" alt="oblačno" width="250" />
+          <br />
+          <div class="temperatura">-4°C</div>
+        </h1>
+        <br />
+        <ul class="podatki">
+          <li>
+            FEELS LIKE: <span id="feeling">10</span>°C
+            <br />
+            <br />
+            HUMIDITY:
+            <span id="vlaga">93</span>
+            %
+            <br />
+            <br />
+            WIND:
+            <span id="veter">5</span>
+            km/h
+            <br />
+            <br />
+          </li>
+        </ul>
+        <p>Coded by: Nina K.</p>
+      </div>
+    </div>
+    <script src="script.jsx"></script>
+  </body>
+</html>
