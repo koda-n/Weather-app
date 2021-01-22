@@ -32,13 +32,11 @@ function vnesiInfo(event) {
   function displayTemp(response) {
     console.log(response);
     let temperature = Math.round(response.data.main.temp);
-    console.log(temperature);
 
     let veter = Math.round(response.data.wind.speed * 3.6);
-    console.log(veter);
 
     let vlaga = response.data.main.humidity;
-    console.log(vlaga);
+
     let feeling = Math.round(response.data.main.feels_like);
 
     let temp = document.querySelector(".temperatura");
@@ -52,6 +50,12 @@ function vnesiInfo(event) {
 
     let feelin = document.querySelector("#feeling");
     feelin.innerHTML = `${feeling}`;
+
+    let icon = document.querySelector(".ikona");
+    icon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
   }
   let city = vnesi.value;
   function lokacija(city) {
