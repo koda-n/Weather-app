@@ -16,12 +16,13 @@ function now() {
   ];
   let day = days[datum.getDay()];
 
-  let stavek = `${day}, ${hour}:${minutes}`;
+  let stavek = `${day} at ${hour}:${minutes}`;
 
   let h3 = document.querySelector("h3");
   h3.innerHTML = stavek;
 }
 now();
+
 function vnesiInfo(event) {
   now();
   event.preventDefault();
@@ -30,13 +31,9 @@ function vnesiInfo(event) {
   mesto.innerHTML = vnesi.value;
 
   function displayTemp(response) {
-    console.log(response);
     let temperature = Math.round(response.data.main.temp);
-
     let veter = Math.round(response.data.wind.speed * 3.6);
-
     let vlaga = response.data.main.humidity;
-
     let feeling = Math.round(response.data.main.feels_like);
 
     let temp = document.querySelector(".temperatura");
@@ -58,14 +55,13 @@ function vnesiInfo(event) {
     );
   }
 
-  
-
-  let city = vnesi.value;
   function lokacija(city) {
     let cityy = city;
     let apiKey = "f8b197b8ac625b62389f229440e44443";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityy}&units=metric&mph=kmh&appid=f8b197b8ac625b62389f229440e44443`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityy}&units=metric&mph=kmh&appid=${apiKey}`;
     axios.get(url).then(displayTemp);
+  }
+  let city = vnesi.value;
 
   lokacija(city);
 }
