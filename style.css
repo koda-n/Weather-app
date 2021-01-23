@@ -19,6 +19,10 @@ h3 {
 }
 .dan {
   margin-top: 10px;
+  font-size: 15px;
+}
+.temp {
+  font-size: 25px;
 }
 .slikca {
   margin: auto;
