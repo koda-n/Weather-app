@@ -57,13 +57,16 @@ function vnesiInfo(event) {
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
   }
+
+  
+
   let city = vnesi.value;
   function lokacija(city) {
     let cityy = city;
     let apiKey = "f8b197b8ac625b62389f229440e44443";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityy}&units=metric&mph=kmh&appid=f8b197b8ac625b62389f229440e44443`;
     axios.get(url).then(displayTemp);
-  }
+
   lokacija(city);
 }
 let vnesiMesto = document.querySelector("#vnesi");

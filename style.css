@@ -12,7 +12,7 @@ p {
   font-size: 13px;
   font-family: "Coming Soon", cursive;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 h3 {
   font-size: 20px;
@@ -58,6 +58,7 @@ h3 {
   border: solid grey 0.5px;
   border-radius: 10%;
   display: inline-block;
+  margin-top: 40px;
 }
 .go {
   background-color: #b9d3fd;
@@ -72,6 +73,4 @@ h3 {
   border-radius: 10%;
   display: inline-block;
   margin-left: 40px;
-}
-.source {
 }
